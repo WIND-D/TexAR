@@ -110,9 +110,9 @@ extension ViewController {
                 print("State: Testing")
                 self.setNavigationBarTitle("Test")
                 loadModelButton.isHidden = true
-                flashlightButton.isHidden = false
+                //flashlightButton.isHidden = false
                 showMergeScanButton()
-                nextButton.isEnabled = true
+                //nextButton.isEnabled = true
                 nextButton.setTitle("Share", for: [])
                 
                 testRun = TestRun(sceneView: sceneView)
@@ -174,14 +174,14 @@ extension ViewController {
                 self.sceneView.stopPlaneDetection()
             case .adjustingOrigin:
                 print("State: Adjusting Origin")
-                self.displayInstruction(Message("Adjust origin using gestures.\n" +
-                    "You can load a *.usdz 3D model overlay."))
+               // self.displayInstruction(Message("Adjust origin using gestures.\n" +
+                 //   "You can load a *.usdz 3D model overlay."))
                 self.setNavigationBarTitle("Adjust origin")
                 self.showBackButton(true)
                 self.nextButton.isEnabled = true
-                self.loadModelButton.isHidden = false
+              //  self.loadModelButton.isHidden = false
                 self.flashlightButton.isHidden = true
-                self.nextButton.setTitle("Test", for: [])
+                self.nextButton.setTitle("Texture", for: [])
             }
         }
     }

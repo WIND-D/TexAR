@@ -222,7 +222,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
         if !loadModelButton.isHidden {
             loadModelButtonTapped(self)
         } else if !flashlightButton.isHidden {
-            toggleFlashlightButtonTapped(self)
+            //toggleFlashlightButtonTapped(self)
         }
     }
     
@@ -457,7 +457,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, UI
                     Object successfully detected from this angle.
 
                     """ + testRun.statistics
-                displayMessage(messageText, expirationTime: testRun.resultDisplayDuration)
+              //  displayMessage(messageText, expirationTime: testRun.resultDisplayDuration)
             }
         } else if state == .scanning, let planeAnchor = anchor as? ARPlaneAnchor {
             scan?.scannedObject.tryToAlignWithPlanes([planeAnchor])
